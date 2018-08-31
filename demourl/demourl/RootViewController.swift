@@ -35,7 +35,7 @@ class RootViewController : UITableViewController
     override func loadView()
     {
         super.loadView()
-        self.title = "Mobile SDK Sample App"
+        self.title = "Active Accounts"
         let restApi = SFRestAPI.sharedInstance()
         restApi.Promises
         .query(soql: "SELECT Id, Name FROM Account LIMIT 10")
@@ -88,6 +88,7 @@ class RootViewController : UITableViewController
         
         return cell!
     }
+    //if let url = URL(string: "salesforce1://sObject/0010b00002CVSeTAAX/view") {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Get selected cell at Index
@@ -96,9 +97,8 @@ class RootViewController : UITableViewController
         let dataId : String = (cell!.detailTextLabel!.text)!
         // Comstruct URL scheme with record ID selected to Veiw
         let strURL : String = "salesforce1://sObject/" + dataId + "/view"
-        print("### URL:"+strURL)
-        //if let url = URL(string: "salesforce1://sObject/0010b00002CVSeTAAX/view") {
         if let url = URL(string: strURL) {
+            // Open Account record in Salesforce Mobile
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }

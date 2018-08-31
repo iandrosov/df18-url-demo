@@ -81,10 +81,25 @@ class RootViewController : UITableViewController
         // Configure the cell to show the data.
         let obj = dataRows[indexPath.row]
         cell!.textLabel!.text = obj["Name"] as? String
+        cell!.detailTextLabel!.text = obj["Id"] as? String
         
         // This adds the arrow to the right hand side.
         cell?.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         
         return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Get selected cell at Index
+        let cell = tableView.cellForRow(at: indexPath)
+        // Get selected cell detailText record ID
+        let dataId : String = (cell!.detailTextLabel!.text)!
+        // Comstruct URL scheme with record ID selected to Veiw
+        let strURL : String = "salesforce1://sObject/" + dataId + "/view"
+        print("### URL:"+strURL)
+        //if let url = URL(string: "salesforce1://sObject/0010b00002CVSeTAAX/view") {
+        if let url = URL(string: strURL) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
 }

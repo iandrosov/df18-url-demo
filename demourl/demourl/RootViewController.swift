@@ -38,7 +38,7 @@ class RootViewController : UITableViewController
         self.title = "Active Accounts"
         let restApi = SFRestAPI.sharedInstance()
         restApi.Promises
-        .query(soql: "SELECT Id, Name FROM Account LIMIT 10")
+        .query(soql: "SELECT Id, Name FROM Account LIMIT 20")
         .then {  request  in
             restApi.Promises.send(request: request)
         }.done { [unowned self] response in

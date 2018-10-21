@@ -147,7 +147,10 @@ class AppDelegate : UIResponder, UIApplicationDelegate
     
     func setupRootViewController()
     {
-        let rootVC = RootViewController(nibName: nil, bundle: nil)
+        //let rootVC = RootViewController(nibName: nil, bundle: nil)
+        let storyboard = UIStoryboard.init(name: "MainStoryboard", bundle: nil)
+        let rootVC = storyboard.instantiateViewController(withIdentifier: "AccountListView")
+        //let rootVC = DemoViewController(nibName: nil, bundle: nil)
         let navVC = UINavigationController(rootViewController: rootVC)
         self.window!.rootViewController = navVC
     }

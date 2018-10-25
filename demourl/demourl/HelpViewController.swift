@@ -1,6 +1,6 @@
 //
 //  HelpViewController.swift
-//  demourl
+//  demourl display Service Cases knowledge
 //
 //  Created by Igor Androsov on 9/10/18.
 //  Copyright © 2018 Salesforce. All rights reserved.

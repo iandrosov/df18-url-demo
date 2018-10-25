@@ -11,10 +11,38 @@
 		4FD6C47A1B754AF1002F9F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C4791B754AF1002F9F90 /* AppDelegate.swift */; };
 		4FD6C49F1B755242002F9F90 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C49C1B755242002F9F90 /* RootViewController.swift */; };
 		4FD6C4A01B755242002F9F90 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C49D1B755242002F9F90 /* InitialViewController.swift */; };
+		51A552462146130500B3597C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A552452146130500B3597C /* MainStoryboard.storyboard */; };
+		51A552482146157300B3597C /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A552472146157300B3597C /* DemoViewController.swift */; };
+		51A5524C2146FAEC00B3597C /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5524B2146FAEC00B3597C /* HelpViewController.swift */; };
+		51A55251214749FF00B3597C /* ServiceKnowledge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A5524D214749FE00B3597C /* ServiceKnowledge.framework */; };
+		51A55252214749FF00B3597C /* ServiceKnowledge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51A5524D214749FE00B3597C /* ServiceKnowledge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51A55253214749FF00B3597C /* ServiceCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A5524E214749FE00B3597C /* ServiceCases.framework */; };
+		51A55254214749FF00B3597C /* ServiceCases.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51A5524E214749FE00B3597C /* ServiceCases.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51A55255214749FF00B3597C /* ServiceChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A5524F214749FE00B3597C /* ServiceChat.framework */; };
+		51A55256214749FF00B3597C /* ServiceChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51A5524F214749FE00B3597C /* ServiceChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51A55257214749FF00B3597C /* ServiceCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A55250214749FF00B3597C /* ServiceCore.framework */; };
+		51A55258214749FF00B3597C /* ServiceCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51A55250214749FF00B3597C /* ServiceCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		78A235BD93AB7D080D67CD51 /* Pods_demourl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A29C75280BDF73123F14B4 /* Pods_demourl.framework */; };
 		B7168FBC1FACC6F900A48DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7168FBB1FACC6F900A48DB5 /* LaunchScreen.storyboard */; };
 		CEA8CA041F071B2300448B51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA8CA031F071B2300448B51 /* Images.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51A5525921474A0000B3597C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				51A55256214749FF00B3597C /* ServiceChat.framework in Embed Frameworks */,
+				51A55254214749FF00B3597C /* ServiceCases.framework in Embed Frameworks */,
+				51A55252214749FF00B3597C /* ServiceKnowledge.framework in Embed Frameworks */,
+				51A55258214749FF00B3597C /* ServiceCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		045D1C5BC2F1EADFDFB3671E /* Pods-demourl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demourl.release.xcconfig"; path = "Pods/Target Support Files/Pods-demourl/Pods-demourl.release.xcconfig"; sourceTree = "<group>"; };
@@ -26,6 +54,13 @@
 		4FD6C49C1B755242002F9F90 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		4FD6C49D1B755242002F9F90 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		4FF12F8A1DCA91F5004D9EF9 /* demourl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = demourl.entitlements; sourceTree = "<group>"; };
+		51A552452146130500B3597C /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		51A552472146157300B3597C /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		51A5524B2146FAEC00B3597C /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		51A5524D214749FE00B3597C /* ServiceKnowledge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ServiceKnowledge.framework; sourceTree = "<group>"; };
+		51A5524E214749FE00B3597C /* ServiceCases.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ServiceCases.framework; sourceTree = "<group>"; };
+		51A5524F214749FE00B3597C /* ServiceChat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ServiceChat.framework; sourceTree = "<group>"; };
+		51A55250214749FF00B3597C /* ServiceCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ServiceCore.framework; sourceTree = "<group>"; };
 		762732C14CFE40A989C3AD70 /* Pods-demourl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demourl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demourl/Pods-demourl.debug.xcconfig"; sourceTree = "<group>"; };
 		82A29C75280BDF73123F14B4 /* Pods_demourl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demourl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7168FBB1FACC6F900A48DB5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../mobile_sdk/SalesforceMobileSDK-iOS/shared/resources/LaunchScreen.storyboard"; sourceTree = "<group>"; };
@@ -37,7 +72,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A55257214749FF00B3597C /* ServiceCore.framework in Frameworks */,
+				51A55253214749FF00B3597C /* ServiceCases.framework in Frameworks */,
 				78A235BD93AB7D080D67CD51 /* Pods_demourl.framework in Frameworks */,
+				51A55255214749FF00B3597C /* ServiceChat.framework in Frameworks */,
+				51A55251214749FF00B3597C /* ServiceKnowledge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +86,10 @@
 		4FD6C46B1B754AF1002F9F90 = {
 			isa = PBXGroup;
 			children = (
+				51A5524E214749FE00B3597C /* ServiceCases.framework */,
+				51A5524F214749FE00B3597C /* ServiceChat.framework */,
+				51A55250214749FF00B3597C /* ServiceCore.framework */,
+				51A5524D214749FE00B3597C /* ServiceKnowledge.framework */,
 				4FD6C4761B754AF1002F9F90 /* demourl */,
 				4FD6C4751B754AF1002F9F90 /* Products */,
 				DDFDDF0A29E4BDD114B51BBC /* Pods */,
@@ -78,6 +121,7 @@
 				B7168FBB1FACC6F900A48DB5 /* LaunchScreen.storyboard */,
 				CEA8CA031F071B2300448B51 /* Images.xcassets */,
 				4FD6C4781B754AF1002F9F90 /* Info.plist */,
+				51A552452146130500B3597C /* MainStoryboard.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -90,6 +134,8 @@
 				4FD6C49D1B755242002F9F90 /* InitialViewController.swift */,
 				4FD6C4791B754AF1002F9F90 /* AppDelegate.swift */,
 				4F393A281C3C8BCD00B3EA13 /* main.swift */,
+				51A552472146157300B3597C /* DemoViewController.swift */,
+				51A5524B2146FAEC00B3597C /* HelpViewController.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -124,6 +170,7 @@
 				4FD6C4721B754AF1002F9F90 /* Resources */,
 				68C67C5E03B67EF3A0901D3D /* [CP] Copy Pods Resources */,
 				7056FC8D1D194E5113988767 /* [CP] Embed Pods Frameworks */,
+				51A5525921474A0000B3597C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A552462146130500B3597C /* MainStoryboard.storyboard in Resources */,
 				CEA8CA041F071B2300448B51 /* Images.xcassets in Resources */,
 				B7168FBC1FACC6F900A48DB5 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -260,10 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A5524C2146FAEC00B3597C /* HelpViewController.swift in Sources */,
 				4FD6C47A1B754AF1002F9F90 /* AppDelegate.swift in Sources */,
 				4FD6C49F1B755242002F9F90 /* RootViewController.swift in Sources */,
 				4F393A291C3C8BCD00B3EA13 /* main.swift in Sources */,
 				4FD6C4A01B755242002F9F90 /* InitialViewController.swift in Sources */,
+				51A552482146157300B3597C /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +431,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = demourl/demourl.entitlements;
 				DEVELOPMENT_TEAM = R2ZK6DY34C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = demourl/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -400,6 +454,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = demourl/demourl.entitlements;
 				DEVELOPMENT_TEAM = R2ZK6DY34C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = demourl/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

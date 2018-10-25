@@ -51,7 +51,7 @@ class DemoViewController : UITableViewController
     {
         return self.dataRows.count
     }
-    
+    /// Handle table select URL
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cellIdentifier = "CellIdentifier"
@@ -80,7 +80,7 @@ class DemoViewController : UITableViewController
     //if let url = URL(string: "salesforce1://sObject/0010b00002CVSeTAAX/view") {
     // JS Code Example: window.location.replace("salesforce1://sObject/0010b00002CVSeTAAX/view");
     
-    
+    // Open external app URL
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Get selected cell at Index
         let cell = tableView.cellForRow(at: indexPath)
@@ -90,7 +90,7 @@ class DemoViewController : UITableViewController
         let strURL : String = "salesforce1://sObject/" + dataId + "/view"
         if let url = URL(string: strURL) {
             // Open Account record in Salesforce Mobile
-            
+            UIApplication.shared.open(url, options: [:], completionHandler: nil);
         }
     }
         

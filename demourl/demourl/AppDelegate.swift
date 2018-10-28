@@ -27,8 +27,10 @@ import UIKit
 import SalesforceSDKCore
 import SalesforceSwiftSDK
 
-// Fill these in when creating a new Connected Application on Force.com
-let RemoteAccessConsumerKey = "3MVG9Iu66FKeHhINkB1l7xt7kR8czFcCTUhgoA8Ol2Ltf1eYHOU4SqQRSEitYFDUpqRWcoQ2.dBv_a1Dyu5xa";
+// DEFAULT SDK KEY Fill these in when creating a new Connected Application on Force.com
+//let RemoteAccessConsumerKey = "3MVG9Iu66FKeHhINkB1l7xt7kR8czFcCTUhgoA8Ol2Ltf1eYHOU4SqQRSEitYFDUpqRWcoQ2.dBv_a1Dyu5xa";
+// SafeDreams APP Key demo
+let RemoteAccessConsumerKey = "3MVG9dZJodJWITSuoBGD8Ek3Etg6FZBZ.oKASuxu9.1sWTYCjx_FX4wMriPJE2jQXkU7C5VTDWlC6bBupuCE2";
 let OAuthRedirectURI        = "testsfdc:///mobilesdk/detect/oauth/done";
 
 class AppDelegate : UIResponder, UIApplicationDelegate

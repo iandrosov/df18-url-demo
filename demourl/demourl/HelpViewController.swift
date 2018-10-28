@@ -40,7 +40,7 @@ class HelpViewController: UIViewController, SCServiceCloudDelegate {
     
     @IBAction func startChat(_ sender: Any) {
         print("### START MY CHAT ###") // "d.la1-c1-iad.salesforceliveagent.com/chat/rest"
-        let config = SCSChatConfiguration(liveAgentPod: "d.la1-c1-iad.salesforceliveagent.com/chat",
+        let config = SCSChatConfiguration(liveAgentPod: "d.la1-c1-iad.salesforceliveagent.com",
                                           orgId: "00D0b000000uKcn",
                                           deploymentId: "5720b0000008zfr",
                                           buttonId: "5730b000000c3nD")

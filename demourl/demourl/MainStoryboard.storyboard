@@ -13,7 +13,6 @@
         <!--Root View Controller-->
         <scene sceneID="FL1-0M-GbF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fRi-7p-uNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="AccountListView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="03C-Y8-sdp" customClass="DemoViewController" customModule="demourl" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SVc-Kp-avB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -67,6 +66,7 @@
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRi-7p-uNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-95" y="6"/>
         </scene>
@@ -79,9 +79,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvp-eK-faj">
-                                <rect key="frame" x="62" y="233" width="33" height="30"/>
+                                <rect key="frame" x="62" y="237" width="33" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Chat"/>
+                                <state key="normal" title="Chat" backgroundImage="login-window-gear"/>
                                 <connections>
                                     <action selector="startChat:" destination="ljf-dh-PGV" eventType="touchUpInside" id="nGF-qz-uuK"/>
                                 </connections>
@@ -128,4 +128,7 @@
             <point key="canvasLocation" x="-950" y="6"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="login-window-gear" width="22" height="22"/>
+    </resources>
 </document>

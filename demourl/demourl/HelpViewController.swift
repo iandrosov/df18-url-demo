@@ -19,16 +19,17 @@ class HelpViewController: UIViewController, SCServiceCloudDelegate {
         self.title = "Service Request"
         
         // Create configuration object with your community URL
-        //let config = SCSServiceConfiguration(community: URL(string: "https://mycommunity.example.com")!)
-        
-        // Create configuration object with init params
         let config = SCSServiceConfiguration(
             community: URL(string: "https://df18-mobile-demo-developer-edition.na57.force.com/safedreamin")!,
             dataCategoryGroup: "Regions",
             rootDataCategory: "All")
         
-        // Perform any additional configuration here
+        // Perform Service Case additional configuration here
+        // Assign a global action to the Case Management interface.
+        // The global action determines the fields shown when a user creates a case.
         ServiceCloud.shared().cases.caseCreateActionName = "NewCase"
+        //MyOpenCases
+        ServiceCloud.shared().cases.caseListName = "MyOpenCases"
         // Pass configuration to shared instance
         ServiceCloud.shared().serviceConfiguration = config
     }

@@ -28,6 +28,7 @@ class HelpViewController: UIViewController, SCServiceCloudDelegate {
         // Assign a global action to the Case Management interface.
         // The global action determines the fields shown when a user creates a case.
         ServiceCloud.shared().cases.caseCreateActionName = "NewCase"
+        
         //MyOpenCases
         ServiceCloud.shared().cases.caseListName = "MyOpenCases"
         // Pass configuration to shared instance
@@ -38,9 +39,11 @@ class HelpViewController: UIViewController, SCServiceCloudDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    //
+    // LiveAgent Chat sevice endpoint URL: d.la1-c1-iad.salesforceliveagent.com/chat/rest
+    // For this configuration only roop aprt is used: d.la1-c1-iad.salesforceliveagent.com
     @IBAction func startChat(_ sender: Any) {
-        print("### START MY CHAT ###") // "d.la1-c1-iad.salesforceliveagent.com/chat/rest"
+        print("### START MY CHAT ###")
         let config = SCSChatConfiguration(liveAgentPod: "d.la1-c1-iad.salesforceliveagent.com",
                                           orgId: "00D0b000000uKcn",
                                           deploymentId: "5720b0000008zfr",
